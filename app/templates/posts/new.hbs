@@ -1,0 +1,7 @@
+<h1>New Post here:</h1>
+
+<p>Title: {{input value=postTitle}}</p>
+<p>Body: {{input value=postBody}}</p>
+
+<button {{action 'newPost'}}> Save Post</button>
+<button>{{#link-to 'posts'}}cancel{{/link-to}}</button>
