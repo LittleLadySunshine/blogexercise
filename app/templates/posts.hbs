@@ -1,15 +1,20 @@
-
-
 <h1>Posts Section</h1>
 <hr>
 
 <button>{{#link-to 'posts.new'}}New Post{{/link-to}}</button>
 
-{{#each post in model}}
-<p>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</p>
-<p>{{#link-to 'post' post}}{{post.body}}{{/link-to}}</p>
-<button {{action 'deletePost' post}}> Delete</button>
-{{/each}}
+<div class="col-5-md">
+  {{#each post in model}}
+    <p>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</p>
+  {{/each}}
+</div>
+
+<div class="col-7-md">
+  {{#each post in model}}
+    <p>{{#link-to 'post' post}}{{post.body}}{{/link-to}}</p>
+  {{/each}}
+  <button {{action 'deletePost' post}}> Delete</button>
+</div>
 
 <hr>
 

@@ -1,4 +1,15 @@
-{{#each in model}}
-  {{posts.title}}
-  {{posts.body}}
-{{/each}}
+<div class= "presentation">
+  <aside>
+    {{#each in model}}
+      {{post.title}}
+    {{/each}}
+  <aside>
+
+  <main>
+  {{#each in model}}
+    {{posts.body}}
+  {{/each}}
+  </main>
+
+
+</div>
