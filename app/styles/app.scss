@@ -72,13 +72,11 @@ footer {
   height: 15px;
   padding: 5px;
   background-color: rgba(189,196,167, 0.25);
-  float: right;
   border: 5px rgba(189,196,167, 0.25);
-  width: 60%;
-  margin-right: 10%;
   float: right;
-  margin-bottom: 5%;
-  margin-left: 10%;
+  width: 60%;
+  margin: 20px;
+  margin-right: 10%;
 
 
 }
@@ -86,7 +84,7 @@ footer {
 
 #editPage .body textarea {
   border-radius: 25px;
-  height: 100px;
+  height: 300px;
   padding: 10px;
   background-color: rgba(189,196,167, 0.25);
   border: 5px rgba(189,196,167, 0.25);
@@ -95,7 +93,7 @@ footer {
   margin-right: 10%;
   float: right;
   margin-bottom: 5%;
-  margin-left: 10%;
+
 }
 
 #editPage {
