@@ -1,9 +1,9 @@
 <div id="header">
   <nav>
-    <h1 class="page-header header"> Welcome to DigiDi </h1>
+    <h1 class="page-header header">{{#link-to 'homepage'}}Welcome to DigiDi{{/link-to}} </h1>
     <h2 class="page-header header"> Create and Share your Digital Social Profile</h2>
     <h2><button>{{#link-to 'posts.new'}}New Post{{/link-to}}</button></h2>
-    <h2><button>{{#link-to 'posts'}}View Posts{{/link-to}}</button></h2>
+    <h2><button>{{#link-to 'posts.new'}}View Posts{{/link-to}}</button></h2>
   </nav>
 </div>
 <hr>
@@ -11,6 +11,6 @@
 {{outlet}}
 
 <footer>
-  <hr>
+<hr>
   <h6 class="text-center">February 2015</h6>
 </footer>

@@ -31,6 +31,9 @@ body {
 
 }
 
+img {
+  width: 500px;
+}
 
 nav {
   text-align: center;
@@ -48,6 +51,7 @@ button {
   display: inline;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .header {
@@ -66,9 +70,15 @@ footer {
 #editPage .title textarea {
   border-radius: 25px;
   height: 15px;
-  width: 500px;
   padding: 5px;
   background-color: rgba(189,196,167, 0.25);
+  float: right;
+  border: 5px rgba(189,196,167, 0.25);
+  width: 60%;
+  margin-right: 10%;
+  float: right;
+  margin-bottom: 5%;
+  margin-left: 10%;
 
 
 }
@@ -77,18 +87,23 @@ footer {
 #editPage .body textarea {
   border-radius: 25px;
   height: 100px;
-  width: 500px;
   padding: 10px;
   background-color: rgba(189,196,167, 0.25);
-  color: black;
+  border: 5px rgba(189,196,167, 0.25);
+  float: right;
+  width: 60%;
+  margin-right: 10%;
+  float: right;
+  margin-bottom: 5%;
+  margin-left: 10%;
 }
 
 #editPage {
-  margin: 20px;
+ position: center;
 }
 
 .sidebar {
-  border: solid 1px black;
+  border: solid 1px rgba(189,196,167, 0.25);
   border-radius: 5px;
   padding: 3% 1%;
   float: left;
@@ -111,7 +126,7 @@ footer {
   margin-right: 10%;
   float: right;
   margin-bottom: 5%;
-  margin-left: 10%
+  margin-left: 10%;
   background-color: rgba(189,196,167, 0.25);
   color: black;
 
@@ -123,6 +138,7 @@ footer {
     height: 20vh;
     background-color: rgba(189,196,167, 0.25);
     color: black;
+    margin-left: 20%;
   }
 
   span {
@@ -134,8 +150,25 @@ footer {
   width: 60%;
   margin-right: 10%;
   float: right;
+  border: 5px solid rgba(189,196,167, 0.25);
+  padding: 10px;
+  border-radius: 25%;
+  background-color: rgba(189,196,167, 0.25);
 
   span {
     font-size: 0.6em;
   }
+
+  button {
+    float: right;
+    font-size: 0.75em;
+  }
+}
+
+#introduction {
+  background-color: rgba(189,196,167, 0.25);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  float: right;
+  width: 50%;
+  margin-bottom: 70px;
 }

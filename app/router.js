@@ -12,7 +12,8 @@ Router.map(function() {
           this.route ('edit', { path: '/edit' });
           });
       });
-  });
+  this.route("homepage", { path: '/' });
+});
 
 export default Router;
 
