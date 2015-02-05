@@ -3,7 +3,7 @@
     <h3 class="page-header">
       {{model.title}}
       <span class="pull-right"><button>{{#link-to 'post.edit'}}Edit{{/link-to}}</span></button>
-      <button class="btn btn-default" {{action 'deletePost'}}>Delete</button>
+      <button class="btn btn-default" {{action 'deletePost' this}}>Delete</button>
       <button class="btn btn-default" {{action 'newPost'}}>Save</button>
 
     </h3>
