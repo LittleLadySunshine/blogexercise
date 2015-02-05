@@ -1,4 +1,11 @@
-<h2>View Post: '{{title}}'</h2>
-<h3>'{{body}}'</h3>
+<section class="view-post">
+  <div class="row">
+    <h3 class="page-header">
+      {{model.title}}
+      <span class="pull-right"><button>{{#link-to 'post.edit'}}edit{{/link-to}}</span></button>
+    </h3>
+    <p>{{model.body}}</p>
+  </div>
+</section>
 
 {{outlet}}

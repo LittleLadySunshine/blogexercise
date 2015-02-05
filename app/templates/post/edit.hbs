@@ -1,4 +1,10 @@
-<h1>Edit</h1>
-{{textarea value=title}}
-{{textarea value=body}}
-<button {{action 'editPost' this}}> Edit </button>
+
+<div id="editPage">
+  <div class="title">
+    {{textarea value=title}}
+  </div>
+
+  <div class="body">
+    {{textarea value=body}}
+  </div>
+</div>

@@ -1,12 +1,161 @@
-@import "color";
-@import "typography";
-
-
 html, body {
   margin: 20px;
-  background: $light-purple;
 }
 
-h2 {
+a[href]:hover {
+ cursor: pointer;
+ text-decoration: none;
+}
+
+.links a[href]{
+ text-decoration: none;
+ padding: 100px;
+ font-weight: 800;
+ color: transparent;
+ font-size:45px;
+ background: url(/tarantula-nebula.jpg) repeat;
+ background-position: 40% 50%;
+ -webkit-background-clip: text;
+ text-align:center;
+ line-height:90px;
+
+}
+
+body {
+  background: url(http://www.freephotobackgrounds.com/wp-content/uploads/2013/07/GreenAbstractBackgroundTexture_lrg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-opacity: 0.5;
+
+}
+
+
+nav {
   text-align: center;
+  padding: 20px;
+  display: inline;
+}
+
+button {
+  font-family: 'Lobster', cursive;
+  width: 100px;
+  height: 30px;
+  font-size: 0.75em;
+  border-radius: 25px;
+  background: transparent;
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  margin-botton: 3%;
+  text-align: center;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+}
+
+footer {
+  clear: both;
+}
+
+#editPage .title textarea {
+  margin: 50px;
+  border-radius: 25px;
+  height: 15px;
+  width: 500px;
+  padding: 5px;
+  background-color: rgba(189,196,167, 0.25);
+
+}
+
+
+#editPage .body textarea {
+  margin: 50px;
+  border-radius: 25px;
+  height: 100px;
+  width: 500px;
+  padding: 10px;
+  background-color: rgba(189,196,167, 0.25);
+  color: black;
+}
+
+.sidebar {
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #B2CEDE;
+  padding: 3% 1%;
+  float: left;
+  width: 20%;
+  margin-bottom: 2%;
+  background-color: rgba(189,196,167, 0.25);
+
+
+  h3 {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  }
+
+  li, h3 {
+    margin-bottom: 15%;
+  }
+}
+
+.new-post, .edit-post {
+  width: 60%;
+  margin-right: 10%;
+  float: right;
+  margin-bottom: 5%;
+
+  .form-control {
+    margin-bottom: 4%;
+  }
+
+  textarea {
+    height: 20vh;
+  }
+
+  span {
+    font-size: 0.8em;
+  }
+}
+
+.view-post {
+  width: 60%;
+  margin-right: 10%;
+  float: right;
+
+  span {
+    font-size: 0.6em;
+  }
+}
+
+.comments {
+  width: 60%;
+  margin-right: 10%;
+  margin-bottom: 4%;
+  float: right;
+  border: solid 1px black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px gray;
+
+  .comment {
+    padding: 2%;
+
+    .header {
+      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .new-comment {
+
+    padding: 2%;
+
+    .form-control {
+      margin-bottom: 2%;
+    }
+  }
 }
