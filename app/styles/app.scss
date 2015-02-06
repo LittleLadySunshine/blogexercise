@@ -48,6 +48,7 @@ button {
   position: relative;
   cursor: pointer;
   text-decoration: none;
+  margin: 5px;
 }
 
 .header {
@@ -120,19 +121,22 @@ footer {
   margin-right: 10%;
   float: right;
   margin-bottom: 5%;
-  margin-left: 10%;
   background-color: rgba(189,196,167, 0.25);
   color: black;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 1.25 em;
 
   .form-control {
     margin-bottom: 4%;
+    width: 70%;
   }
 
   textarea {
     height: 20vh;
     background-color: rgba(189,196,167, 0.25);
     color: black;
-    margin-left: 20%;
+
   }
 
   span {
@@ -177,7 +181,7 @@ footer {
 }
 
 #introduction p {
-  padding: 5px;
+  padding: 10px;
   color: white;
 }
 
