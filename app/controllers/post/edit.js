@@ -11,4 +11,6 @@ export default Ember.ObjectController.extend({
       }.bind(this));
     },
   }
+
+
 });

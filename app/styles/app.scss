@@ -12,7 +12,7 @@ a:visited {
   color: white; text-decoration: underline;
 }
 a:hover {
-  color: grey; text-decoration: none; 
+  color: grey; text-decoration: none;
 }
 
 body {
@@ -166,6 +166,7 @@ footer {
   padding: 10px;
   border-radius: 25%;
   background-color: rgba(189,196,167, 0.25);
+  height: auto;
 
   span {
     font-size: 0.6em;
@@ -174,6 +175,10 @@ footer {
   button {
     float: right;
     font-size: 1.25em;
+  }
+
+  p {
+    color: white;
   }
 }
 
@@ -214,4 +219,8 @@ footer li img {
 
 legend {
   text-align: center;
+}
+
+h4 {
+  color: white;
 }
