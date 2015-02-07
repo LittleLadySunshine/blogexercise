@@ -4,6 +4,8 @@ html, body {
 
 a:link {
   color: white; text-decoration: underline;
+  font-family: 'Lobster', 'cursive';
+  font-size: 1.25em;
 }
 a:active {
   color: white; text-decoration: underline;
@@ -93,12 +95,11 @@ footer {
 
 #editPage {
  position: center;
- }
 
- #title {
+ .title textarea {
    color: white;
    font-family: 'Yanone Kaffeesatz', sans-serif;
-   font-size: 1.25em;
+   font-size: 1em;
  }
 }
 
