@@ -2,23 +2,17 @@ html, body {
   margin: 20px;
 }
 
-a[href]:hover {
- cursor: pointer;
- text-decoration: none;
+a:link {
+  color: white; text-decoration: underline;
 }
-
-.links a[href]{
- text-decoration: none;
- padding: 100px;
- font-weight: 800;
- color: transparent;
- font-size:45px;
- background: url(/tarantula-nebula.jpg) repeat;
- background-position: 40% 50%;
- -webkit-background-clip: text;
- text-align:center;
- line-height:90px;
-
+a:active {
+  color: white; text-decoration: underline;
+}
+a:visited {
+  color: white; text-decoration: underline;
+}
+a:hover {
+  color: grey; text-decoration: none; 
 }
 
 body {
@@ -49,6 +43,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   margin: 5px;
+  color: white;
 }
 
 .header {
@@ -100,7 +95,7 @@ footer {
 .sidebar {
   border: solid 1px rgba(189,196,167, 0.25);
   border-radius: 5px;
-  padding: 3% 1%;
+  padding: 0.5% 1%;
   float: left;
   width: 20%;
   margin-bottom: 2%;
@@ -109,6 +104,10 @@ footer {
 
   h3 {
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-align: center;
   }
 
   li, h3 {
@@ -155,6 +154,7 @@ footer {
   button {
     float: right;
     font-size: 1.25em;
+    color: white;
   }
 }
 
@@ -206,4 +206,12 @@ img {
 footer li img {
   height: 30px;
   width: 1px;
+}
+
+.fa-times {
+  color: white;
+}
+
+legend {
+  text-align: center;
 }

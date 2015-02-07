@@ -3,7 +3,7 @@
   <ul>
     {{#each post in model}}
       <li>{{#link-to 'post' post}}{{post.title}}
-        {{/link-to}}<button {{action 'deletePost' post}}>Delete</button></li>
+        {{/link-to}}<i class="fa fa-times"{{action 'deletePost' post}}></i></li>
     {{/each}}
   </ul>
 </section>
