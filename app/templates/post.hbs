@@ -1,12 +1,12 @@
 <section class="view-post">
   <div class="row">
-    <h3 class="page-header">
-      {{model.title}}
+    <div class="page-header">
+      <p>{{model.title}}</p>
       <span class="pull-right"><button>{{#link-to 'post.edit'}}Edit{{/link-to}}</span></button>
       <button class="btn btn-default" {{action 'deletePost' this}}>Delete</button>
       <button class="btn btn-default" {{action 'newPost'}}>Save</button>
 
-    </h3>
+    </div>
     <p>{{model.body}}</p>
   </div>
 </section>

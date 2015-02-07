@@ -85,11 +85,21 @@ footer {
   margin-right: 10%;
   float: right;
   margin-bottom: 5%;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.25em;
 
 }
 
 #editPage {
  position: center;
+ }
+
+ #title {
+   color: white;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size: 1.25em;
+ }
 }
 
 .sidebar {
@@ -138,13 +148,15 @@ footer {
   textarea {
     height: 20vh;
     background-color: rgba(189,196,167, 0.25);
-    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.25em;
 
   }
 
   input {
     background-color: rgba(189,196,167, 0.25);
-    color: black;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.25em;
   }
 
   span {
@@ -157,6 +169,8 @@ footer {
     color: white;
   }
 }
+
+
 
 .view-post {
   width: 60%;
@@ -177,9 +191,17 @@ footer {
     font-size: 1.25em;
   }
 
+  #view-post #page-header {
+    color: white;
+    font-family: 'Lobster', cursive;
+  }
+
   p {
     color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.25em;
   }
+
 }
 
 #introduction {
@@ -217,9 +239,6 @@ footer li img {
   color: white;
 }
 
-legend {
-  text-align: center;
-}
 
 h4 {
   color: white;
