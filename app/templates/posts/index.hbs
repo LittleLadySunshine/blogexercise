@@ -1,14 +1,16 @@
 <div class= "presentation">
   <aside>
-    {{#each in model}}
-      {{post.title}}
+    {{#each post in model}}
+      <div class='title'>
+        {{#link-to 'post' post}}
+          {{post.title}}
+        {{/link-to}}
+      </div>
     {{/each}}
   <aside>
 
   <main>
-  {{#each in model}}
-    {{posts.body}}
-  {{/each}}
+
   </main>
 
 

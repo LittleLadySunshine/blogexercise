@@ -1,0 +1,7 @@
+<h2>A list of users</h2>
+
+<ul>
+  {{#each user in model}}
+    <li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>

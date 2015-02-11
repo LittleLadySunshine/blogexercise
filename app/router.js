@@ -8,13 +8,17 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('posts', { path: 'posts' }, function () {
       this.route('new');
-      this.resource('post', { path: '/:post_id' }, function(){
+      this.resource('post', { path: '/:post_id' }, function (){
           this.route ('edit', { path: '/edit' });
           });
       });
   this.route("homepage", { path: '/' });
-});
 
+  this.route('users', function() {
+    this.resource('user', { path: '/:user_id'});
+  });
+  this.route("user");
+});
 export default Router;
 
 // resource refers to an entity or a collection of entities (posts -- with properties)
