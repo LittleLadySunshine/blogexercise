@@ -1,0 +1,17 @@
+<h1>{{firstName}}</h1>
+
+<h3>posts</h3>
+<ul>
+  {{#each post in posts}}
+    <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<hr>
+
+<h3>comments</h3>
+<ul>
+  {{#each comment in comments}}
+    <li>{{comment.body}} - <em>from {{comment.post.title}}</em></li>
+  {{/each}}
+</ul>
