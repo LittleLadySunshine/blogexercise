@@ -17,7 +17,7 @@ Router.map(function() {
   this.route('users', function() {
     this.resource('user', { path: '/:user_id'});
   });
-  this.route("user");
+
 });
 export default Router;
 
