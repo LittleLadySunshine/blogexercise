@@ -3,18 +3,28 @@
     <h4>New Post</h4>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        {{input class="form-control" value=postTitle}}
+        {{input class="form-control" value=postTitle placeholder="Write Title Here"}}
       </div>
     </div>
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        {{textarea class="form-control" value=postBody}}
+        {{textarea class="form-control" value=postBody placeholder="Write Your Post Here"}}
       </div>
     </div>
     <div class="row">
       <div class="col-md-2 col-md-offset-2">
         <button class="btn btn-default" {{action 'newPost'}}>save</save>
+        </div>
       </div>
+    </form>
+
+    <div class="tweets">
+      <h2>My Tweets</h2>
+
+      {{#each tweet in model}}
+      {{tweet.text}}
+      {{/each}}
+
     </div>
-  </form>
-</section>
+
+  </section>
