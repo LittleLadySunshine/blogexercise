@@ -50,6 +50,15 @@ button {
   color: white;
 }
 
+#headerButtons {
+  text-align: center;
+}
+
+#headerButtons ul li {
+  display: inline;
+
+}
+
 .header {
   width: 100%;
   margin-botton: 3%;
