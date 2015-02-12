@@ -1,13 +1,26 @@
+<div class="upperHeader">
+  <h2>Login In</h2>
+  <div class="input-group margin-bottom-md">
+    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="form-control" type="text" placeholder="Email address">
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+    <input class="form-control" type="password" placeholder="Password">
+  </div>
+</div>
+<hr>
+
 <div id="header">
   <nav>
     <h1 class="page-header header">{{#link-to 'homepage'}}Welcome to DigiDi{{/link-to}} </h1>
     <h2 class="page-header header"> Create and Share your Digital Social Profile</h2>
     <div id="headerButtons">
-        <ul>
-          <li><button>{{#link-to 'posts.new'}}New Post{{/link-to}}</button></li>
-          <li><button>{{#link-to 'posts'}}View Posts{{/link-to}}</button></li>
-          <li><button>{{#link-to 'users'}}Users{{/link-to}}</button></li>
-        </ul>
+      <ul>
+        <li><button>{{#link-to 'posts.new'}}New Post{{/link-to}}</button></li>
+        <li><button>{{#link-to 'posts'}}View Posts{{/link-to}}</button></li>
+        <li><button>{{#link-to 'users'}}Users{{/link-to}}</button></li>
+      </ul>
     </div>
   </nav>
 </div>
@@ -16,22 +29,12 @@
 {{outlet}}
 
 <footer>
-<hr>
+  <hr>
   <h6 class="text-center">gSchool February 2015
     <span><i class="fa fa-facebook-official fa-2x"></i>
-          <i class="fa fa-pinterest fa-2x"></i>
-          <i class="fa fa-linkedin fa-2x"></i>
-          <i class="fa fa-twitter fa-2x"></i>
-          </span></h6>
+      <i class="fa fa-pinterest fa-2x"></i>
+      <i class="fa fa-linkedin fa-2x"></i>
+      <i class="fa fa-twitter fa-2x"></i>
+    </span></h6>
 
-</footer>
-
-
-<div class="input-group margin-bottom-sm">
-  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-  <input class="form-control" type="text" placeholder="Email address">
-</div>
-<div class="input-group">
-  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
-  <input class="form-control" type="password" placeholder="Password">
-</div>
+  </footer>
