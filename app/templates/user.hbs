@@ -1,17 +1,20 @@
-<h1>{{firstName}}</h1>
+<div id="usersPage">
+  <h2>{{firstName}}</h2>
 
-<h3>posts</h3>
-<ul>
-  {{#each post in posts}}
-    <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+  <h3>posts</h3>
+  <ul>
+    {{#each post in posts}}
+      <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
 
-<hr>
+  <hr>
 
-<h3>comments</h3>
-<ul>
-  {{#each comment in comments}}
-    <li>{{comment.body}} - <em>from {{comment.post.title}}</em></li>
-  {{/each}}
-</ul>
+  <h3>comments</h3>
+  <ul>
+    {{#each comment in comments}}
+      <li>{{comment.body}} - <em>from {{comment.post.title}}</em></li>
+    {{/each}}
+  </ul>
+  
+</div>
