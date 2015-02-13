@@ -4,5 +4,6 @@ export default DS.Model.extend({
   title:    DS.attr('string'),
    body:     DS.attr('string'),
    user:     DS.belongsTo('user'),
-   comments: DS.hasMany('comment')
+   comments: DS.hasMany('comment'),
+   tweets: DS.hasMany 'tweet', { async: true }
 });

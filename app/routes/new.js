@@ -4,9 +4,19 @@ export default Ember.Route.extend({
 
   model: function () {
     return //calls api controller action that returns array of tweets
+    var page_content;
+      $.get( "http://www.twitter.com/redrayofsun", function(data){
+        page_content = data;
+});
   }
 
+  UserRoute = Ember.Route.extend
+  setupController: (controller, model) ->
+    controller.set 'model', model
+    controller.set 'tweets', @store.find('tweet')
+
 });
+
 
 
 // get request to api for list of tweets - call controller action for returned tweets -- put here
