@@ -18,6 +18,7 @@ Router.map(function() {
     this.resource('user', { path: '/:user_id'});
   });
 
+  this.route("tweets");
 });
 export default Router;
 
