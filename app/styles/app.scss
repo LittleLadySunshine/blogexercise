@@ -6,6 +6,7 @@ a:link {
   color: white; text-decoration: underline;
   font-family: 'Lobster', 'cursive';
   font-size: 1.25em;
+  margin: 5px;
 }
 a:active {
   color: white; text-decoration: underline;
@@ -51,8 +52,7 @@ button {
 }
 
 .upperHeader {
-  position:
-  right;
+  position: right;
 
 }
 
@@ -252,7 +252,7 @@ footer {
 
 img {
   width: 40%;
-  float:left;
+  float: right;
   min-width: 60px;
   height: 100%;
   padding: 20px;
